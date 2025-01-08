@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Numeric Input Validation</title>
+    <!-- Add basic styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 8px;
+            width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Numeric Input Validation Example</h2>
+    <form name="numericForm" onsubmit="return validateNumericInput()">
+        <div class="form-group">
+            <label for="age">Enter Your Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter a number">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Include JavaScript -->
+    <script src="numeric-validation.js"></script>
+</body>
+
+</html>
